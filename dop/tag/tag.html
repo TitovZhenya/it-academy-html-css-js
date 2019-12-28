@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>tag</title>
+</head>
+<body>
+	
+	<h3>&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</h3>
+	<dl>
+		<dt>Тут можно указать термин</dt>
+			<dd>А тут дать определение</dd>
+		
+		<dt>H<sub>2</sub>O<sub>2</sub></dt>
+			<dd>Формула пероксида водорода</dd>
+	</dl>
+
+	<h3>&lt;sub&gt;, &lt;sup&gt;</h3>
+		<p>Тег &lt;sub&gt; отображает текст в виде нижнего индекса, а тег &lt;sup&gt; в виде верхнего.</p>
+		<p>log<sup>a</sup>a<sub>y</sub>=y</p>
+
+	<h3>&lt;pre&gt;</h3>
+		<p>Тег &lt;pre&gt; позволяет отображать текст в виде предварительно форматированного текста. 
+		При этом учитываются все пробелы.</p>
+
+		<pre>H    E    L    L    O        W    O    R    L    D
+
+а также все
+
+	переносы </pre>
+
+	<h3>&lt;code&gt; &lt;tt&gt;</h3>
+		<p>Тег &lt;code&gt; необходим для отображения какого-нибудь куска кода</p>
+		<code>print "&lt;H1&gt;Hello World&lt;/H1&gt;\n";</code>
+
+		<p>Тег &lt;tt&gt; позволяет отобразить текст моноширинным.
+			<tt>Всем привет я моноширинный текст</tt></p>
+	
+	<h3>&lt;kbd&gt;</h3>
+		<p>Тег &lt;kbd&gt; используется для обозначения клавиш клавиатуры</p>
+		<p> После того, как текст был выделен, вы можете скопировать его 
+			нажав сочетание клавиш <kbd>&lt;Ctrl&gt;+&lt;C&gt;</kbd> 
+			Для того чтобы вставить скопированное нажмите 
+			<kbd>&lt;Ctrl&gt;+&lt;V&gt;</kbd>.</p>
+
+	<h3>&lt;var&gt;</h3>
+		<p>Тег &lt;var&gt; предназначен для обозначения компьютерных переменных.
+			Переменная <var>Counter_steps</var> отображает счетчик шагов.</p>
+
+	<h3>&lt;blockquote&gt;, &lt;q&gt;</h3>
+		<p>Тег &lt;blockquote&gt; отображает текст как большую цитату, а тег &lt;q&gt; 
+			выделяет в тексте цитату. Также данные теги имеют атрибут <code>cite</code> 
+			который дает возможность сделать ссылку на сайт с цитатой.</p>
+
+		<p><q cite="https://ru.citaty.net/tsitaty/651876-sokrat-kto-khochet-ishchet-sposob-kto-ne-khochet-ishchet-prichi/">Кто хочет - ищет способ, кто не хочет - ищет причину
+		</q> &copy;Сократ</p>
+
+		<blockquote cite="https://loremipsum.io/ru/">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam placeat, asperiores doloremque. Explicabo molestiae ipsa, laudantium obcaecati sint maiores, blanditiis modi natus aperiam voluptate nisi doloremque. Ratione sint sunt dolorum.</p>
+		</blockquote>
+
+	<h3>&lt;ins&gt;, &lt;del&gt;</h3>
+		<dl>
+			<dt>&lt;ins&gt;</dt>
+				<dd>Необходим для выделения текста, который был добавлен в новую версию сайта.</dd>
+
+			<dt>&lt;del&gt;</dt>
+				<dd>используется для выделения текста, который был удален в новой версии документа.</dd>
+		</dl>
+
+		<p>У тегов имеются атрибуты <code>cite</code> для указания <del>ссылки</del> на документ, где приведена причина редактирования текста и <code>datetime</code> <ins>время редактирования</ins></p>
+
+	<h3>&lt;address&gt;</h3>
+		<address>Информация об авторе, ссылки и т.д.</address>
+
+	<h3>&lt;nobr&gt;, &lt;wbr&gt;</h3>
+		<p><nobr>Тут текст без переносов Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus voluptate, molestiae amet, aut nulla impedit dignissimos</nobr> accusamus laboriosam unde consectetur quasi facere, nesciunt delectus praesentium architecto maiores quod necessitatibus, pariatur?</p>
+
+		<p>А тут мы указываем браузеру где сделать перенос. сельско<wbr>хозяйственно-<wbr>машино<wbr>строительный</p>
+</body>
+</html>
