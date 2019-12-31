@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>WebP</title>
+	<style>
+		table{
+			border-collapse: collapse;
+			width: 30%
+		}
+
+		table, td, th{
+			border: 1px solid black;
+		}
+
+		td, th{
+			width: 15%;
+		}
+	</style>
+</head>
+<body>
+	<h1>WebP</h1>
+
+	<p>WebP — формат изображений, созданный в 2010 году и развиваемый компанией Google. Этот формат обеспечивает сжатие изображений как с потерями, так и без потерь.</p>
+
+	<p>WebP документация Google утверждает: Сжатые изображения WebP без потерь на 26% меньше по размеру по сравнению с изображениями PNG. Сжатые изображения WebP с потерями на 25-34% меньше по размеру по сравнению с изображениями в формате JPEG по эквивалентному индексу SSIM. WebP поддерживает прозрачность сжатых изображений без потерь (также известную как alpha channel) со всего лишь 22% дополнительных байт.</p>
+
+	<p>Формат поддерживают Chrome, Opera, браузер Android и остальные популярные браузеры, последним о поддержке в Firefox объявили Mozilla. Остались браузеры Apple, которые не хотят включать поддержку этого формата. Причиной может быть то, что компания разрабатывает более современный AVIF.</p>
+
+	<table>
+		<tr>
+			<th>Плюсы</th>
+			<th>Минусы</th>
+		</tr>
+
+		<tr>
+			<td>Улучшенный алгоритм сжатия</td>
+			<td>Искажение имеет пластиковый вид</td>
+		</tr>
+
+		<tr>
+			<td>Стикеры для телеграма</td>
+			<td>Не все браузеры поддерживают данный формат (не все версии браузеров)</td>
+		</tr>
+
+		<tr>
+			<td>Более качественный переходы цвета</td>
+			<td>Неудобный интерфейс. На macOS в стандартных утилитах не отображает</td>
+		</tr>
+	</table>
+
+	<div>
+		<p> 1) Представлены два изображения JPG слева и WebP справа. Оба изображения занимают 59kb. Выигрывает JPG, так как изображение получилось более детализированым, особенно это видно на белом фоне.</p>
+		<img src="img/whitePepper.jpg" alt="WhitePepperJPG" title="jpg59kb" width="830">
+		<img src="img/whitePepper.webp" alt="WhitePepperWebP" title="webp59kb" width="830">
+
+		 <p>2) Представлены два изображения JPG слева и WebP справа. Оба изображения занимают 62kb и 61kb соответственно. Видимых отличий не видно. Выигрывает WebP, так как изображение занимает на 1kb меньше</p>
+		 <img src="img/mountain.jpg" alt="mountainJPG" title="jpg62kb">
+		 <img src="img/mountain.webp" alt="mountainWebP" title="webp61kb">
+
+		 <p>3) Представлены два изображения PNG слева и WebP справа. Оба изображения занимают 9kb. WebP немного изменил цвет и размылил изображение возле глаз, вокруг головы и рук. Выигрывает PNG.</p>
+		 <img src="img/worker.png" alt="workerPNG" title="png9kb">
+		 <img src="img/worker.webp" alt="workerWebP" title="webp9kb">
+
+		 <p>4) Представлены два изображения JPG слева и WebP справа. Оба изображения занимают 16kb и 12kb соответственно. Размеры разные, но WebP показывает более плавный переход при низком качестве. Победа достается WebP.</p>
+		 <img src="img/gradient.jpg" alt="gradientJPG" title="jpg16kb">
+		 <img src="img/gradient.webp" alt="gradientWebP" title="webp12kb">
+
+		 <p>5) Представлены два изображения PNG слева и WebP справа. Оба изображения занимают 238kb и 73kb соответственно. Размеры достаточно разнятся, но при этом видимых отличий не обнаружено. Выигрывает WebP.</p>
+		 <img src="img/Donut.png" alt="donutPNG" title="png238kb">
+		 <img src="img/Donut.webp" alt="donutWebP" title="webp73kb">
+
+		 <p>6) Представлены два изображения GIF слева и WebP справа. Оба изображения занимают 13kb и 11kb соответственно. WebP исказил красный цвет. Победа достается GIF.</p>
+		<img src="../../Childbook/img/art.gif" alt="artGIF" title="gif13kb">
+		<img src="img/art.webp" alt="artWebP" title="webp11kb">
+
+	</div>
+</body>
+</html>
