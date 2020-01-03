@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Font</title>
+</head>
+<body>
+	<h2>Font color</h2>
+	<div>
+		<p>Font &mdash; контейнер для изменения характеристик шрифта, таких как размер, цвет и гарнитура.</p>
+		
+		<dl>
+			<dt>Атрибуты</dt>
+			<dd>Size - Задает размер шрифта в условных единицах.</dd>
+			<dd>Color - Устанавливает цвет текста.</dd>
+			<dd>Face - Определяет гарнитуру шрифта.</dd>
+		</dl>
+
+		<ul>
+			<li>Заменяем все неправильные шестнадцатеричные символы нулями 0, BruceWillis превращается в b00ce000000</li>
+			<li>“Добиваем” число нулями до количества знаков, делимого на 3 (11 -> 12), получаем b00c e000 0000</li>
+			<li>Разбиваем на три группы, каждая из которых отвечает за одну компоненту RGB: RGB (b00c, e000, 0000)</li>
+			<li>Обрезаем каждый из аргументов справа, оставляя 2 символа, и получаем наш результат RGB (b0, e0, 00) = #B0E000 или он же RGB(176, 224, 0).</li>
+		</ul>
+		
+		<font color="#BruceWillis">Bruce</font><br>
+		<font color="#CANDY">Candy &rarr; ca0d0 &rarr; ca0d00 &rarr; ca 0d 00 &rarr; #CA0D00 rgb(202, 13, 0)</font><br>
+		<font color="#itAcademy">itAcademy 00acade00 &rarr; 00a cad e000 &rarr; 00 ca e0 &rarr; #00CAE0 rgb(0, 202, 224)</font>
+	</div>
+</body>
+</html>
+
