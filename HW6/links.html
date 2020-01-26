@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Links</title>
+	<style>
+		a:hover{
+			color: red;
+		}
+
+		ul{
+			padding-left: 0px;
+		}
+
+		.Method1 li{
+			display: inline-block;
+		}
+		
+		.Method1 li:not(:last-child){
+			margin-right: 5px;
+			padding: 3px 10px 3px 0px;
+			border-right: red solid 3px;
+		}
+		.Method2 a:nth-child(-n+4){
+			margin-right: 5px;
+			padding: 3px 10px 3px 0px;
+			border-right: red solid 3px;
+		}
+		
+		.Method3{
+			margin-top: 5px
+		}
+		
+		.Method3 td{
+			margin-right: 5px;
+			padding: 3px 10px 3px 10px;
+		}
+		
+		.Method3 td:not(:last-of-type){
+			border-right: red solid 3px;
+		}
+
+		.Method4 li{
+			display:inline;
+		}
+
+		.Method4 li:not(:last-child){
+			margin-right: 5px;
+			padding: 3px 10px 3px 0px;
+			border-right: red solid 3px;
+		}
+
+		.Method5 ul{
+			list-style-type: none;
+		}
+
+		.Method5 li:not(:last-child){
+			float: left;
+			margin-right: 5px;
+			padding: 3px 10px 3px 0px;
+			border-right: red solid 3px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="Method1">
+		<ul>
+			<li><a href="">первая ссылка</a></li>
+			<li><a href="">вторая ссылка</a></li>
+			<li><a href="">третья ссылка</a></li>
+			<li><a href="">четвертая ссылка</a></li>
+			<li><a href="">пятая ссылка</a></li>
+		</ul>
+	</div>
+
+	<div class="Method2">
+		<a href="">первая ссылка</a>
+		<a href="">вторая ссылка</a>
+		<a href="">третья ссылка</a>
+		<a href="">четвертая ссылка</a>
+		<a href="">пятая ссылка</a>
+	</div>
+
+	<div class="Method3">
+		<table>
+			<tr>
+				<td><a href="">первая ссылка</a></td>
+				<td><a href="">вторая ссылка</a></td>
+				<td><a href="">третья ссылка</a></td>
+				<td><a href="">четвертая ссылка</a></td>
+				<td><a href="">пятая ссылка</a></td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="Method4">
+		<ul>
+			<li><a href="">первая ссылка</a></li>
+			<li><a href="">вторая ссылка</a></li>
+			<li><a href="">третья ссылка</a></li>
+			<li><a href="">четвертая ссылка</a></li>
+			<li><a href="">пятая ссылка</a></li>
+		</ul>
+	</div>
+
+	<div class="Method5">
+		<ul>
+			<li><a href="">первая ссылка</a></li>
+			<li><a href="">вторая ссылка</a></li>
+			<li><a href="">третья ссылка</a></li>
+			<li><a href="">четвертая ссылка</a></li>
+			<li><a href="">пятая ссылка</a></li>
+		</ul>
+	</div class>
+</body>
+</html>
