@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Star</title>
+	<style>
+		.Main_container{
+			width: 380px;
+		}
+
+		.Main_container > span{
+			float: right;
+			display: inline-block;
+			width: 76px;
+			height: 78px;
+			background: url('star0.png');
+		}
+
+		.Main_container > span:hover, .Main_container > span:hover ~ span{
+			background: url('star1.png');
+		}
+	</style>
+</head>
+<body>
+	<div class="Main_container">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</body>
+</html>

@@ -16,24 +16,31 @@
 			display: inline-block;
 		}
 		
-		.Method1 li:not(:last-child){
+		.Method1 li:not(:first-child):before{
 			margin-right: 5px;
-			padding: 3px 10px 3px 0px;
-			border-right: red solid 3px;
+			padding: 3px 10px 3px 10px;
+			content: url('RedBorder.jpg');
+			vertical-align: -12px
 		}
-		.Method2 a:nth-child(-n+4){
+		
+		.Method2 a:nth-child(-n+4):after{
 			margin-right: 5px;
-			padding: 3px 10px 3px 0px;
-			border-right: red solid 3px;
+			padding: 3px 0px 3px 10px;
+			content: url('RedBorder.jpg');
+			vertical-align: -12px
 		}
 		
 		.Method3{
 			margin-top: 5px
 		}
 		
-		.Method3 td{
+		.Method3 td:nth-child(n+2){
 			margin-right: 5px;
 			padding: 3px 10px 3px 10px;
+		}
+
+		.Method3 td:first-child{
+			padding: 3px 10px 3px 0px;
 		}
 		
 		.Method3 td:not(:last-of-type){
@@ -44,18 +51,22 @@
 			display:inline;
 		}
 
-		.Method4 li:not(:last-child){
+		.Method4 li:not(:last-child):after{
 			margin-right: 5px;
-			padding: 3px 10px 3px 0px;
-			border-right: red solid 3px;
+			padding: 3px 0px 3px 10px;
+			content: url('RedBorder.jpg');
+			vertical-align: -12px
 		}
 
 		.Method5 ul{
 			list-style-type: none;
 		}
 
-		.Method5 li:not(:last-child){
+		.Method5 li{
 			float: left;
+		}
+		
+		.Method5 li:not(:last-child){
 			margin-right: 5px;
 			padding: 3px 10px 3px 0px;
 			border-right: red solid 3px;
@@ -64,6 +75,7 @@
 </head>
 <body>
 	
+	<!-- Список display: inline-block. Для всех li применено свойство “display: inline-block”, а также для всех li, кроме первого(li:not(:first-child)), заданы padding, margin. Красный разделитель задан через :before в котором в качестве «content’a» указана картинка. При изменении количества пунктов меню красный разделитель будет достраиваться сам и не будет применяться только к последнему li. -->
 	<div class="Method1">
 		<ul>
 			<li><a href="">первая ссылка</a></li>
@@ -74,6 +86,7 @@
 		</ul>
 	</div>
 
+	<!-- Гиперссылки, идущие подряд. Для тегов a начиная 4 и до 1 (в обратном порядке a:nth-child(-n+4)) заданы padding и margin. Красный разделитель задан через :after в котором в качестве «content’a» указана картинка. Данный метод будет применяться лишь на 5 ссылок меню. Если ссылок будет 6 и более красный разделитель margin и padding пропадут. -->
 	<div class="Method2">
 		<a href="">первая ссылка</a>
 		<a href="">вторая ссылка</a>
@@ -82,6 +95,7 @@
 		<a href="">пятая ссылка</a>
 	</div>
 
+	<!-- Таблица c одним рядом. Всем ячейкам через формулу (n+2) заданы padding и margin. Первой ячейки задано отдельно, чтобы она не прижался к красному разделителю. Красный разделитель задан через border-right: red solid 3px; и он не применяется к последней ячейки (not(:last-of-type)). При изменении количества пунктов ячеек красный разделитель будет достраиваться сам и не будет применяться только к последней ячейки.  -->
 	<div class="Method3">
 		<table>
 			<tr>
@@ -94,6 +108,7 @@
 		</table>
 	</div>
 
+	<!-- Список display: inline. Для всех li применено свойство “display: inline ”, а также для всех li, кроме последнего li:not(:last child) заданы padding, margin. Красный разделитель задан через :after в котором в качестве «content’a» указана картинка. При изменении количества пунктов меню красный разделитель будет достраиваться сам и не будет применяться только к последнему li. -->
 	<div class="Method4">
 		<ul>
 			<li><a href="">первая ссылка</a></li>
@@ -104,6 +119,7 @@
 		</ul>
 	</div>
 
+	<!-- Список float: left. Ко всем li применено float:left. Красный разделитель задан через border-right: red solid 3px; и он не применяется к последней li (not(:last-of-type)). При изменении количества пунктов меню красный разделитель будет достраиваться сам и не будет применяться только к последнему li. -->
 	<div class="Method5">
 		<ul>
 			<li><a href="">первая ссылка</a></li>
