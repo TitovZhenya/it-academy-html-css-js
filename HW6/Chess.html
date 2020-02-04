@@ -40,6 +40,16 @@
 			background: url('extref.png') left no-repeat;
 			padding-left: 13px;
 		}
+
+		@media print{
+			* {
+				color: black !important;
+			}
+
+			[href^="#"]{
+				display: none;
+			}
+		}
 	</style>
 </head>
 <body>
