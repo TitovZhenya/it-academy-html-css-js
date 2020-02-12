@@ -1,0 +1,108 @@
+		.paragraph{
+			text-align: center;
+			text-transform: uppercase;
+			font: bold 20px sans-serif;
+			margin: 0px;
+			padding: 14px 0px 0px 0px;
+		}
+
+		.Header_Footer{
+			background-color: rgb(173, 216, 230);
+			text-align: center;
+			padding: 10px 0px 10px 0px;
+			font: 30px sans-serif;
+			color: blue;
+			clear: both;
+		}
+
+		.Menu{
+			width: 200px;
+			float: left;
+		}
+
+		.Content{
+			margin-left: 200px;
+			padding-left: 10px;
+		}
+
+		.newsPicture{
+			float: left;
+			margin: 0px 15px 5px 0px;
+		}
+
+		.Main_container{
+			background: url('img/ball.png') repeat-y top right;
+			
+		}
+
+		.Menu_container{
+			background: url('img/MenuBg.png') repeat-y left;
+		}
+
+		.Main_spacer{
+			clear: both;
+		}
+
+		.Menu_mobile{
+			display: none;
+		}
+
+		.enter{
+			position: fixed;
+			right: 35px;
+			top: 35px;
+			width: 120px;
+			height: 45px;
+			border: solid rgb(0,128,0) 2px;
+			text-align: center;
+			padding-top: 10px;
+			font: 15px sans-serif;
+			background-color: rgb(144,238,144);
+		}
+
+		@media only all and (max-width: 671px){
+			div.Header_Footer{
+				display: none;
+			}
+
+			div.Menu{
+				display: none;
+			}
+
+			div.Content{
+				margin-left: 0px;
+				padding-left: 0px;
+				width: 98%;
+			}
+
+			div.Menu_container, div.Main_container{
+				background: none
+			}
+
+			img.newsPicture{
+				width: 98%;
+				height: auto;
+				float: none;
+			}
+
+			div.Menu_mobile{
+				display: block;
+				width: 98%;
+			}
+
+			div.Menu_mobile ul li{
+				display: inline-block;
+				list-style: none;
+			}
+
+			div.Menu_mobile ul li:not(:last-child):after{
+				content: url("../HW6/RedBorder.jpg");
+				margin-right: 5px;
+				padding: 3px 10px 3px 10px;
+				vertical-align: -12px
+			}
+
+			div.Content, div.Menu_mobile{
+				font: 20px serif;
+			}
+		}

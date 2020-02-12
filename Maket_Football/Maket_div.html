@@ -3,103 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Maket Div</title>
-	<style>
-		.paragraph{
-			text-align: center;
-			text-transform: uppercase;
-			font: bold 20px sans-serif;
-			margin: 0px;
-			padding: 14px 0px 0px 0px;
-		}
-
-		.Header_Footer{
-			background-color: rgb(173, 216, 230);
-			text-align: center;
-			padding: 10px 0px 10px 0px;
-			font: 30px sans-serif;
-			color: blue;
-			clear: both;
-		}
-
-		.Menu{
-			width: 200px;
-			float: left;
-		}
-
-		.Content{
-			margin-left: 200px;
-			padding-left: 10px;
-		}
-
-		.newsPicture{
-			float: left;
-			margin: 0px 15px 5px 0px;
-		}
-
-		.Main_container{
-			background: url('img/ball.png') repeat-y top right;
-			
-		}
-
-		.Menu_container{
-			background: url('img/MenuBg.png') repeat-y left;
-		}
-
-		.Main_spacer{
-			clear: both;
-		}
-
-		.Menu_mobile{
-			display: none;
-		}
-
-		@media only all and (max-width: 671px){
-			div.Header_Footer{
-				display: none;
-			}
-
-			div.Menu{
-				display: none;
-			}
-
-			div.Content{
-				margin-left: 0px;
-				padding-left: 0px;
-				width: 98%;
-			}
-
-			div.Menu_container, div.Main_container{
-				background: none
-			}
-
-			img.newsPicture{
-				width: 98%;
-				height: auto;
-				float: none;
-			}
-
-			div.Menu_mobile{
-				display: block;
-				width: 98%;
-			}
-
-			div.Menu_mobile ul li{
-				display: inline-block;
-				list-style: none;
-			}
-
-			div.Menu_mobile ul li:not(:last-child):after{
-				content: url("../HW6/RedBorder.jpg");
-				margin-right: 5px;
-				padding: 3px 10px 3px 10px;
-				vertical-align: -12px
-			}
-
-			div.Content, div.Menu_mobile{
-				font: 20px serif;
-			}
-		}
-	</style>
+	<link rel="stylesheet" href="Style.css" type="text/css">
 </head>
 <body>
 	<div class="Header_Footer">Всем привет! Я шапка сайта.</div>
@@ -152,5 +56,7 @@
 		</div>
 
 		<div class="Header_Footer">Я подвал сайта.</div>
+
+		<div class="enter"><a href="">ВСТУПИТЬ В КЛУБ</a></div>
 </body>
 </html>

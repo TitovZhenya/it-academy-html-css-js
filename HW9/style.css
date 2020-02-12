@@ -1,0 +1,60 @@
+*{
+	font: 15px sans-serif;
+}
+
+form{
+	padding: 0px 8px 0px 8px;
+}
+
+div{
+	margin-bottom: 5px;
+}
+
+span{
+	position: relative;
+	top: -2px;
+}
+
+.signature{
+	width: 180px;
+	float: left;
+}
+
+.signature + div{
+	margin-left: 180px;
+}
+
+#article{
+	width: 100%;
+}
+
+.choice > div{
+	display: inline-block;
+}
+
+[type=checkbox]{
+	position: relative;
+	top: 2px;
+}
+
+textarea{
+	width: 100%;
+}
+
+@media only all and (max-width: 563px){
+	.signature{
+		float: none;
+	}
+
+	.signature + div{
+		margin-left: 0px;
+	}
+
+	select{
+		width: 100%;
+	}
+
+	.choice > div{
+		display: block;
+	}
+}

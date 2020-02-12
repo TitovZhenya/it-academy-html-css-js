@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Maket Form</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+	<form action="">
+		<p>Для публикации вашей статьи, заполните пожалуйста следующую форму:</p>
+		<div class="signature">
+			<label for="article">Название статьи:</label>
+		</div>
+		<div>
+			<input type="text" id="article" name="Article">
+		</div>
+
+		<div class="signature">
+			<label for="sign">Рубрика:</label>
+		</div>
+		<div>
+			<select name="answer" id="sign" class="drop">
+				<option value="1">компьютерная техника</option>
+				<option value="2">графика и дизайн</option>
+				<option value="3" selected="">программирование</option>
+			</select>
+		</div>
+
+		<div class="signature">
+			Публикация:
+		</div>
+		<div class="choice">
+			<div><input type="radio" name="search" value="1"><span>на сайте</span></div>
+			<div><input type="radio" name="search" value="2"><span>в журнале</span></div>
+			<div><input type="radio" name="search" value="3"><span>на сайте и в журнале</span></div>
+		</div>
+
+		<div>
+			<label for="mark">Разрешить комментарий:</label>
+			<input type="checkbox" checked="" name="comment" id="mark">
+		</div>
+		
+		<div>
+			Текст статьи:
+		</div>
+		<textarea name="myText" name="Text"></textarea>
+
+		<div>
+			<input type='submit' value='Опубликовать'>
+		</div>
+	</form>
+</body>
+</html>

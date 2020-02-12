@@ -1,0 +1,39 @@
+.Abs{
+	position: relative;
+	height: 256px;
+	z-index: 1;
+}
+
+.center-img{
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.Abs img:first-of-type{
+	position: absolute;
+	left: -200px;
+}
+
+.Abs img:last-of-type{
+	position: absolute;
+	top: 350px;
+}
+
+.Abs img:nth-child(2){
+	position: absolute;
+	left: 200px;
+}
+
+.Abs img:nth-child(3){
+	position: absolute;
+	top: 150px;
+	z-index: 2;
+}
+
+.Abs img:first-of-type:hover,
+.Abs img:last-of-type:hover,
+.Abs img:nth-child(2):hover,
+.Abs img:nth-child(3):hover{
+	z-index: 5;
+}

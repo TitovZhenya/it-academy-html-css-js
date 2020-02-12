@@ -1,0 +1,46 @@
+.Name{
+	font: bold 24px serif; 
+	margin-top: 25px;
+	}
+
+.Date{
+	color: green;
+	}
+
+.Champion{
+	color: red; 
+	font-weight: bold;
+	}
+
+.Content{
+	color: blue; 
+	font-style: italic;
+	}
+
+p{
+	margin: 0;
+}
+
+a{
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+a:hover{
+	text-decoration: underline;
+	}
+
+[href*="//"]{
+	background: url('extref.png') left no-repeat;
+	padding-left: 13px;
+	}
+
+		@media print{
+			* {
+				color: black !important;
+			}
+
+			[href^="#"]{
+				display: none;
+			}
+		}

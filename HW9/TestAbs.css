@@ -1,0 +1,38 @@
+.Abs{
+	position: relative;
+	z-index: 1
+}
+
+.Abs img:first-of-type{
+	position: absolute;
+	left: 44%;
+	transform: translateX(-50%);
+}
+
+.Abs img:last-of-type{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 180px;
+}
+
+.Abs img:nth-child(2){
+	position: absolute;
+	left: 56%;
+	transform: translateX(-50%);
+}
+
+.Abs img:nth-child(3){
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 50px;
+	z-index: 2;
+}
+
+.Abs img:first-of-type:hover,
+.Abs img:last-of-type:hover,
+.Abs img:nth-child(2):hover,
+.Abs img:nth-child(3):hover{
+	z-index: 5;
+}
