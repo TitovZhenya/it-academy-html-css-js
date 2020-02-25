@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Anim</title>
+	<style>
+		@keyframes spin
+		{
+    		from { transform: rotate(0deg); background: white; color: grey }
+    		50% { transform: rotate(180deg); background: green; color: white }
+    		to { transform: rotate(360deg); background: white; color: grey}
+		}
+
+		@keyframes SpinWheel
+		{
+    		from { transform: rotate(0deg) }
+    		to { transform: rotate(360deg) }
+		}
+
+		@keyframes SpinWheel2
+		{
+    		from { transform: rotate(0deg) }
+    		to { transform: rotate(-360deg) }
+		}
+
+		.img{
+			display: inline-block;
+		}
+
+		div.container:hover img:first-child{
+			animation: SpinWheel 7s infinite linear;
+		}
+
+		div.container:hover img:last-child{
+			animation: SpinWheel2 7s infinite linear;
+		}
+
+		.anim-container{
+			display: inline-block;
+			background-color: white;
+			color: grey;
+			padding: 10px;
+			font-size: 25px;
+			border-radius: 5px;
+			box-shadow: 0 0 7px black;
+			animation: spin 7s infinite linear;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		<img src="anim.jpg" alt="">
+
+			<div class="anim-container">
+				Я кручусь как колесо
+			</div>
+
+		<img src="anim.jpg" alt="">
+	</div>
+
+</body>
+</html>
