@@ -154,10 +154,10 @@ div.user-info a:hover{
 	box-shadow: 0px 0px 13px rgba(0,0,0,0.3);
 	visibility: hidden;
 	opacity: 0;
-	transition: 0.7s opacity ease-in-out;
-	-webkit-transition: 0.7s opacity ease-in-out;
-	-moz-transition: 0.7s opacity ease-in-out;
-	-o-transition: 0.7s opacity ease-in-out;
+	transition: 0.5s opacity ease-in-out;
+	-webkit-transition: 0.5s opacity ease-in-out;
+	-moz-transition: 0.5s opacity ease-in-out;
+	-o-transition: 0.5s opacity ease-in-out;
 }
 
 div.menu-nav li:hover > div{
