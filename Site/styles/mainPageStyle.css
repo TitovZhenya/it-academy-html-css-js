@@ -22,6 +22,7 @@
 	z-index: 10;
 	display: flex;
 	flex-direction: column;
+	width: 1440px;
 }
 
 .promo::before{
@@ -376,6 +377,10 @@ div.sale span:last-child span{
 	padding: 7px 15px;
 	cursor: pointer;
 	outline: none;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
 }
 
 .content-wrapper-button > button:hover{
@@ -477,8 +482,8 @@ div.sale span:last-child span{
 	justify-content: space-around;
 }
 
-.logo a:hover img{
-	animation: SpinAnimation 0.7s linear;
+.logo div.page-center > div:hover img{
+	animation: SpinAnimation 0.8s linear;
 }
 
 /*===News===*/
