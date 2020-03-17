@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>О нас</title>
+	<title>Вопрос-ответ</title>
 	<link rel="icon" href="../img/ICO/icon.png" type="image/png">
-	<link rel="stylesheet" href="../styles/aboutUsStyle.css" type="text/css">
+	<link rel="stylesheet" href="../styles/FAQstyle.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,400i,600,700,800,800i&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../fonts/icomoon/style.css" type="text/css">
@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
+	
 	<header>
 		<div class="header-nav clearfix">
 			<div class="page-center">
@@ -132,8 +132,8 @@
 						</li>
 
 						<li class="category"><a href="Contact.html" title="Наши контакты">КОНТАКТЫ</a></li>
-						<li class="category"><a href="FAQ.html" title="Вопрос-ответ">FAQS</a><span class="new">HOT</span></li>
-						<li class="category"><a href="" title="Информация о нас">О НАС</a></li>
+						<li class="category"><a href="" title="Вопрос-ответ">FAQS</a><span class="new">HOT</span></li>
+						<li class="category"><a href="Contact.html" title="Информация о нас">О НАС</a></li>
 					</ul>
 				</div>
 			</div>
@@ -150,8 +150,8 @@
 					<li><a href="../catalog/catalog.html" title="Каталог">Каталог</a></li>
 					<li><a href="../catalog/catalog.html" title="Каталог">Аксессуары</a></li>
 					<li><a href="Contact.html" title="Наши контакты">Контакты</a></li>
-					<li><a href="FAQ.html" title="Контакты">FAQs</a></li>
-					<li><a href="" title="Информация о нас">О нас</a></li>
+					<li><a href="" title="Контакты">FAQs</a></li>
+					<li><a href="aboutUs.html" title="Информация о нас">О нас</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -161,59 +161,95 @@
 		<div class="page-center">
 			<nav class="breadcrumbs">
 				<h3>Страница</h3>
-				<a href="../Wristwatch.html" title="На главную страницу">Домой</a>
+				<a href="../Wristwatch.html" title="Перейти на главную страницу">Домой</a>
 				<span>&ndash;</span>
-				<span>О нас</span>
+				<span>FAQs</span>
 			</nav>
 		</div>
 	</section>
 
-	<section class="aboutUs-info">
+	<section class="accordion">
 		<div class="page-center">
-			<div class="aboutUs-title">
-				О нас
+			<div class="accordion-title">
+				Вопрос ответ
 			</div>
-			<div class="aboutUs-wrapper">
+
+			<div class="accordion-wrapper">
 				<div>
-					<img src="../img/news/news2.png" alt="Картинка с часами" title="Часы">
-				</div>
-				<div>
-					<h3>WatchShop</h3>
-					<div>WatchShop &mdash; сеть магазинов наручных часов. Компания основана в феврале 2020 года. В наших магазинах представлены такие известные своим непревзойдённым качеством и утончённым стилем  бренды, как Montblanc, IWC Schaffhausen, Edifice, Nautica, Fossil. Представленные коллекции порадуют ценителей точного времени и шикарных аксессуаров, ведь шедевры классического и современного часового дизайна перестают быть только инструментом для измерения времени и становятся показателем статуса и вкуса владельца.</div>
+					<input type="radio" id="Box1" name="Box" checked class="RadioBar">
+					<label for="Box1"><span>1.</span>Вы принимаете оплату только в белорусских рублях?<i class="fas fa-angle-down"></i></label>
+					<div class="accordion-content">
+						<p>Все расчеты осуществляются только в белорусских рублях.</p>
+					</div>
+
 					<div>
-						<button type="submit">Связаться с нами</button>
+						<input type="radio" id="Box2" name="Box" class="RadioBar">
+						<label for="Box2"><span>2.</span>Как осуществляется доставка в регионы?<i class="fas fa-angle-down"></i></label>
+						<div class="accordion-content">
+						<p>Да, согласовать доставку можно в любой регион Беларуси. Расчет стоимости производится индивидуально и зависит от месторасположения</p>
+						</div>
+					</div>
+
+					<div>
+						<input type="radio" id="Box3" name="Box" class="RadioBar">
+						<label for="Box3"><span>3.</span>Какое время доставки в границах города Минска?<i class="fas fa-angle-down"></i></label>
+						<div class="accordion-content">
+						<p>В границах города Минска доставка осуществляется с 19:00 по 22:00.</p>
+						</div>
+					</div>
+
+					<div>
+						<input type="radio" id="Box4" name="Box" class="RadioBar">
+						<label for="Box4"><span>4.</span>Возможен ли самовывоз из города Минска?<i class="fas fa-angle-down"></i></label>
+						<div class="accordion-content">
+						<p>После комплектации заказа вам надо будет самостоятельно забрать его в течение 5 календарных дней по адресу: г. Минск, ТЦ Дана-Молл, 1 этаж, с 10-00 до 22-00.</p>
+						</div>
+					</div>
+
+
+					<div>
+						<input type="radio" id="Box5" name="Box" class="RadioBar">
+						<label for="Box5"><span>5.</span>Вы работаете по выходным?<i class="fas fa-angle-down"></i></label>
+						<div class="accordion-content">
+						<p>Мы работаем ежедневно с 10-00 до 22-00.</p>
+						</div>	
+					</div>
+
+					<div>
+						<input type="radio" id="Box6" name="Box" class="RadioBar">
+						<label for="Box6"><span>6.</span>Вы даёте гарантию на продаваемый товар?<i class="fas fa-angle-down"></i></label>
+						<div class="accordion-content">
+						<p>Весь реализуемый в нашем магазине товар является официально ввезенным на территорию РБ, поэтому у нас официальная гарантия на товар.</p>
+						</div>	
+					</div>
+
+					<div>
+						<input type="radio" id="Box7" name="Box" class="RadioBar">
+						<label for="Box7"><span>7.</span>Можно ли получить скидку, если я постоянный клиент?<i class="fas fa-angle-down"></i></label>
+						<div class="accordion-content">
+						<p>Всем новым клиентам при первой покупке в нашем магазине мы выдаем дисконтную карту. Дисконтная карта предоставляет скидку в размере 3% на последующие заказы.</p>
+						</div>	
+					</div>
+
+					<div>
+						<input type="radio" id="Box8" name="Box" class="RadioBar">
+						<label for="Box8"><span>8.</span>А мне надо платить за доставку по Минску?<i class="fas fa-angle-down"></i></label>
+						<div class="accordion-content">
+						<p>Заказанный Вами товар на сумму более 100 рублей доставляется по городу Минску и в пределах кольцевой автодороги БЕСПЛАТНО до Вашего дома. Дополнительно взимается плата за доставку товара на сумму менее 100 рублей. Размер оплаты - 5 рублей.</p>
+						</div>	
+					</div>
+
+					<div>
+						<input type="radio" id="Box9" name="Box" class="RadioBar">
+						<label for="Box9"><span>9.</span>Где вы находитесь?<i class="fas fa-angle-down"></i></label>
+						<div class="accordion-content">
+						<p>г. Минск, ТЦ Дана-Молл, 1 этаж.</p>
+						</div>	
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	
-	<section class="aboutUs-subInfo">
-		<div class="page-center">
-			<div>
-				<h3>О нас</h3>
-				<div>Покупка часов &mdash; серьезное решение, от правильного принятия которого зависит не только время эксплуатации часов, но и имидж покупателя. Именно поэтому, важно приобретать часы только у официальных дилеров, которые несут полную ответственность за оригинальность товара, а также обеспечивают полный спектр услуг по гарантийному и послегарантийному обслуживанию.</div>
-			</div>
-
-			<div class="aboutUs-subInfo-logos">
-				<a href="Contact.html" title="Контакты">
-					<div><img src="../img/ICO/rocket.svg" alt="Картинка ракеты" title="Бесплатная доставка"></div>
-					<div>Бесплатная доставка по Беларуси</div>
-				</a>
-
-				<a href="Contact.html" title="Контакты">
-					<div><img src="../img/ICO/phone.svg" alt="Картинка телефона" title="Связаться с нами"></div>
-					<div>Сервис поддержки 24х7 </div>
-				</a>
-
-				<a href="Contact.html" title="Контакты">
-					<div><img src="../img/ICO/wallet.svg" alt="Картинка кредитки" title="У нас выгодные условия рассрочки"></div>
-					<div>Рассрочка под 0%</div>
-				</a>
-			</div>
-		</div>
-	</section>
-
 
 	<footer>
 		<div class="footer-contact">
@@ -290,6 +326,7 @@
 		  document.body.scrollTop = 0;
 		  document.documentElement.scrollTop = 0;
 		}
-	</script>
+	</script>	
+
 </body>
-</html>	
+</html>

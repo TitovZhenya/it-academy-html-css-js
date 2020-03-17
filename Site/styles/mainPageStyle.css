@@ -7,6 +7,8 @@
     50% { transform: rotateY(180deg); }
     to { transform: rotateY(360deg); }
 }
+
+
 /*=== Promo ===*/
 
 .promo{
@@ -14,15 +16,13 @@
 	background: url('../img/promo.jpg') no-repeat 50% 50%;
 	background-size: cover;
 	position: relative;
+	height: 70vh;
+	padding-top: 100px;
 }
 
 .promo > div.page-center{
-	height: 70vh;
 	position: relative;
 	z-index: 10;
-	display: flex;
-	flex-direction: column;
-	width: 1440px;
 }
 
 .promo::before{
@@ -38,14 +38,11 @@
 
 .promo-logo{
 	font: 800 italic 30px Fira Sans, sans-serif;
-	flex-shrink: 1;
-	padding-top: 50px;
+	padding: 50px 0;
 }
 
 .promo-content{
-	flex-grow: 1;
-	display: flex;
-	align-items: center;
+	padding-top: 50px;
 }
 
 .promo-wrapper-title{
@@ -58,7 +55,7 @@
 	line-height: 30px;	
 }
 
-.promo-wrapper-button > button{
+.promo-wrapper-button button{
 	font: 15px Poppins, sans-serif;
 	margin-top: 10px;
 	padding: 0;
@@ -69,7 +66,7 @@
 	cursor: pointer;
 }
 
-.promo-wrapper-button > button:hover{
+.promo-wrapper-button button:hover{
 	color: #E6CBB0;
 	background-color: #fff;
 	-webkit-transition: all 0.4s;
@@ -78,12 +75,61 @@
 	transition: all 0.4s;
 }
 
+	@media (max-width: 755px){
+		.promo{
+			height: auto;
+			background: none;
+			margin-bottom: 40px;
+		}
+
+		.promo::before{
+			content: none;
+		}
+
+		.promo-logo{
+			padding: 0;
+			font-size: 35px;
+			text-align: center;
+		}
+
+		.promo-wrapper-title{
+			font-size: 35px;
+			line-height: 45px;
+			text-align: center;
+		}
+
+		.promo-wrapper-subtitle{
+			text-align: center;
+		}
+
+		.promo > div.page-center{
+			color: black;
+		}
+
+		.promo-content{
+			padding-top: 25px; 
+		}
+
+		.promo-wrapper-button{
+			margin-top: 15px;
+			text-align: center;
+		}
+
+		.promo-wrapper-button button{
+			height: 50px;
+			width: 130px;
+			font-size: 17px;
+		}
+	}
+
 /*===Banners===*/
 
 .banners,
 .services{
 	background-color: #f9f6f2;
 }
+
+.banners-wrapper{ display: flex; justify-content: center; }
 
 .banners > div.page-center{
 	margin-top: -70px;
@@ -95,9 +141,8 @@
 	box-shadow: 2px 3px 12px 0.2px rgba(0,0,0,0.20);
 }
 
-.banners-wrapper a,
+.banners-wrapper > div,
 .news-content > div > a{
-	display: inline-block;
 	overflow: hidden;
 }
 
@@ -106,18 +151,31 @@
 	-webkit-transition: transform 0.5s;
 	-moz-transition: transform 0.5s;
 	-o-transition: transform 0.5s;
-	transition: transform 0.5s;	
+	transition: transform 0.5s;
+	max-width: 100%;
 }
 
+	@media (max-width:1440px){
+		.banners-wrapper > div:last-child img{
+			padding-right: 13px;
+		}
+	}
+
 .banners-wrapper img:hover{
-	transform: scale(1.1);
+	transform: scale(1.03);
 }
+
+	@media (max-width: 992px){
+		.banners{
+			display: none;
+		}
+	}
 
 /*===Services===*/
 
 .services-wrapper img{
-	height: 60px;
-	width: 60px;
+	height: 50px;
+	width: 50px;
 }
 
 .services-wrapper{
@@ -154,7 +212,17 @@
 	color: #d2b48c;
 }
 
-/*===Product===*/
+	@media (max-width: 755px){
+		.services-wrapper{
+			flex-direction: column;
+		}
+
+		.services-wrapper > a:not(:last-child){
+			margin-bottom: 25px;
+		}
+	}
+
+/*===Product-menu===*/
 
 .product-title{
 	text-align: center;
@@ -217,10 +285,11 @@
 .product-wrapper-box{
 	position: relative;
 	margin: 0 30px;
+	flex: 1;
 }
 
 .product-wrapper-box > a > img{
-	width: 300px;
+	max-width: 100%;
 }
 
 .product-wrapper-box span.stars{
@@ -276,7 +345,7 @@ span.stars > i:last-child{
 	font: 13px Poppins, sans-serif;
 	color: #c1a38b;
 	position: absolute;
-	left: 20px;
+	left: 30px;
 	top: 10px;
 }
 
@@ -284,6 +353,53 @@ span.stars > i:last-child{
 .deals-product > a > img{
 	border: solid 1px #e8e8e8;
 }
+
+@media (max-width:1440px){
+	.product-wrapper-box > a:hover > button{
+		display: none;
+	}
+
+	.product-wrapper-box span.stars{
+		bottom: 65px;
+	}
+
+	.product-wrapper{
+		margin-top: 20px;
+	}
+}
+
+@media (max-width:992px){
+	.product-wrapper-box span.stars{
+		font-size: 10px;
+	}	
+
+	.product-wrapper-box > span:nth-child(2){
+		top: 5px;
+		left: 7px;
+	}
+}
+
+@media (max-width:722px){
+	.product-wrapper-box > span.stars{
+		display: none;
+	}
+
+	.product-wrapper > div{
+		flex-direction: column;
+		align-items: center;
+	}
+	.product-choice > ul > li{
+		text-align: center;
+	}
+}
+
+
+@media (max-width:486px){
+	.product-choice > ul{
+		flex-direction: column;
+	}
+}
+
 
 div.cost,
 div.sale{
@@ -315,7 +431,6 @@ div.sale span:last-child span{
 	padding-right: 5px;
 }
 
-
 /*===Product-day===*/
 
 .product-day-wrapper{
@@ -324,13 +439,13 @@ div.sale span:last-child span{
 }
 
 .product-day-promo{
-	flex-basis: 400px;
+	flex: 1;
 	position: relative;
 	padding: 0 25px;
 }
 
 .product-day-deals{
-	flex-grow: 1;
+	flex: 2;
 	padding: 25px 25px;
 	border: 1px solid #eee;
 }
@@ -340,8 +455,24 @@ div.sale span:last-child span{
 }
 
 .deals-product{
+	flex: 1;
+}
+
+.deals-content{
+	flex: 2;
+}
+
+.deals-product{
 	position: relative;
 	padding: 0 15px;
+}
+
+.product-day-promo > a > img{
+	max-width: 100%;
+}
+
+.deals-product > a > img{
+	max-width: 100%;
 }
 
 .deals-product > span.stars{
@@ -351,6 +482,59 @@ div.sale span:last-child span{
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
+}
+
+@media (max-width:722px){
+	.deals-product > span.stars{
+		display: none;
+	}
+
+	.product-title{
+		display: block;
+	}
+
+	.deals-wrapper{
+		flex-direction: column;
+	}
+
+	.deals-product{
+		text-align: center;
+	}
+
+	.deals-product > span:nth-child(2){
+		position: relative;
+		display: block;
+		left: 0;
+		top: 0;
+		font-size: 16px;
+	}
+
+	.deals-wrapper .deals-content > div:first-child{
+		text-align: center;
+		margin-top: 15px;
+		margin-bottom: 0;
+		font-size: 23px;
+	}
+
+	.deals-wrapper .deals-content > span{
+		text-align: center;
+		display: block;
+		margin-top: 7px;
+	}
+
+	.deals-wrapper .deals-content > div:nth-child(3){
+		font-size: 18px;
+	}
+
+	.content-wrapper-button{
+		text-align: center;
+	}
+
+	.deals-content > div:last-child button{
+		height: 50px;
+		width: 130px;
+		font-size: 15px;
+	}
 }
 
 .deals-content{
@@ -367,6 +551,21 @@ div.sale span:last-child span{
 	margin: 15px 0 20px 0;
 	color: #a4a4a4;
 	font: 400 14px /1.5em Fira Sans, sans-serif;
+}
+
+@media (max-width:992px){
+	.product-day-promo{
+		display: none;
+	}
+
+	.deals-product > span.stars{
+		font-size: 13px;
+		top: 230px;
+	}
+
+	.deals-content div:nth-child(3){
+		font-size: 15px;
+	}
 }
 
 .content-wrapper-button > button{
@@ -392,6 +591,12 @@ div.sale span:last-child span{
 	transition: all 0.4s;
 }
 
+@media (max-width:1440px){
+	.deals-product > span.stars{
+		bottom: 125px; 
+	}
+}
+
 /*===Parallax-banner===*/
 
 .parallax-banner{
@@ -414,7 +619,7 @@ div.sale span:last-child span{
 
 .parallax-banner > div > div:first-child,
 .parallax-banner > div > div:last-child{
-	flex: 1 1;
+	flex: 1;
 	margin-top: 90px;
 
 }
@@ -471,6 +676,23 @@ div.sale span:last-child span{
 	transition: all 0.4s;
 }
 
+@media (max-width: 1440px){
+	.parallax-banner > div.page-center{
+		height: 55vh;
+	}
+}
+
+@media (max-width: 992px){
+	.parallax-banner > div.page-center{
+		height: 60vh;
+	}
+}
+
+@media (max-width: 752px){
+	.parallax-banner{
+		display: none;
+	}
+}
 /*===Logo===*/
 
 .logo{
@@ -482,8 +704,24 @@ div.sale span:last-child span{
 	justify-content: space-around;
 }
 
+.logo > div.page-center img{
+	max-width: 100%;
+}
+
 .logo div.page-center > div:hover img{
 	animation: SpinAnimation 0.8s linear;
+}
+
+@media (max-width:992px){
+	.logo > div.page-center > div{
+		margin: 0 15px;
+	}
+}
+
+@media (max-width:600px){
+	.logo{
+		display: none;
+	}
 }
 
 /*===News===*/
@@ -503,7 +741,8 @@ div.sale span:last-child span{
 }
 
 .news-content{
-	flex-basis: 450px;
+	flex: 1;
+	padding: 0 15px;
 }
 
 .news-content > div:nth-child(2),
@@ -531,10 +770,11 @@ div.sale span:last-child span{
 	-moz-transition: transform 1.5s;
 	-o-transition: transform 1.5s;
 	transition: transform 1.5s;	
+	max-width: 100%;
 }
 
 .news-content img:hover{
-	transform: scale(1.4);
+	transform: scale(1.1);
 }
 
 .news-content > div > a::before{
@@ -546,4 +786,16 @@ div.sale span:last-child span{
 	height: 100%;
 	background-color: rgba(0,0,0,.5);
 
+}
+
+@media (max-width:722px){
+	.news-wrapper{
+		flex-direction: column;
+	}
+}
+
+@media (max-width:600px){
+	.news{
+		margin-top: 25px;
+	}
 }
