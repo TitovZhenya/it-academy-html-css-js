@@ -95,50 +95,50 @@ div.accordion-content p{
 	line-height: 25px;
 }
 
-@media (max-width:1440px){
-	.RadioBar:checked + label + div{
-		height: 95px;
+	@media (max-width:1440px){
+		.RadioBar:checked + label + div{
+			height: 95px;
+		}
 	}
-}
 
-@media (max-width:767px){
-	.RadioBar:checked + label + div{
-		height: 120px;
+	@media (max-width:767px){
+		.RadioBar:checked + label + div{
+			height: 120px;
+		}
 	}
-}
 
-@media (max-width: 574px){
-	.RadioBar:checked + label + div{
-		height: 150px;
+	@media (max-width: 574px){
+		.RadioBar:checked + label + div{
+			height: 150px;
+		}
 	}
-}
 
-@media (max-width: 506px){
-	.RadioBar:checked + label + div{
-		height: 170px;
+	@media (max-width: 506px){
+		.RadioBar:checked + label + div{
+			height: 170px;
+		}
 	}
-}
 
-@media (max-width: 430px){
-	.RadioBar:checked + label + div{
-		height: 200px;
+	@media (max-width: 430px){
+		.RadioBar:checked + label + div{
+			height: 200px;
+		}
 	}
-}
 
-@media (max-width: 400px){
-	.RadioBar:checked + label + div{
-		height: 225px;
+	@media (max-width: 400px){
+		.RadioBar:checked + label + div{
+			height: 225px;
+		}
 	}
-}
 
-@media (max-width: 362px){
-	.RadioBar:checked + label + div{
-		height: 280px;
+	@media (max-width: 362px){
+		.RadioBar:checked + label + div{
+			height: 280px;
+		}
 	}
-}
 
-@media (max-width: 320px){
-	.RadioBar:checked + label + div{
-		height: 400px;
+	@media (max-width: 320px){
+		.RadioBar:checked + label + div{
+			height: 400px;
+		}
 	}
-}

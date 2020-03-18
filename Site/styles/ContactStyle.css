@@ -57,42 +57,42 @@
 	margin: 0 5px;
 }
 
-@media (max-width:992px){
-	.contacts > div.page-center{
-		flex-direction: column;
-		align-items: center;		
+	@media (max-width:992px){
+		.contacts > div.page-center{
+			flex-direction: column;
+			align-items: center;		
+		}
+
+		.contacts > div.page-center > div{
+			margin: 15px 0;
+		}
+
+		.contact-title{
+			font-size: 20px;
+		}
 	}
 
-	.contacts > div.page-center > div{
-		margin: 15px 0;
-	}
+	@media (max-width:620px){
+		.contact-title{
+			margin-bottom: 0;
+		}
 
-	.contact-title{
-		font-size: 20px;
-	}
-}
+		.list-contact{
+			flex-direction: column;
+		}
 
-@media (max-width:620px){
-	.contact-title{
-		margin-bottom: 0;
-	}
+		.list-contact {
+			margin: 15px 0;
+		}
 
-	.list-contact{
-		flex-direction: column;
-	}
+		.list-contact > div{
+			margin: 5px 0;
+		}
 
-	.list-contact {
-		margin: 15px 0;
+		.contact-title{
+			text-align: left;
+		}
 	}
-
-	.list-contact > div{
-		margin: 5px 0;
-	}
-
-	.contact-title{
-		text-align: left;
-	}
-}
 
 /*===Map===*/
 
@@ -185,13 +185,13 @@
 	transition: all 0.4s;
 }
 
-@media (max-width: 600px){
-	.form-contact{
-		flex-direction: column;
-		margin-bottom: 30px;
-	}
+	@media (max-width: 600px){
+		.form-contact{
+			flex-direction: column;
+			margin-bottom: 30px;
+		}
 
-	.form-contact > div{
-		margin: 10px 0;
+		.form-contact > div{
+			margin: 10px 0;
+		}
 	}
-}
